@@ -1,0 +1,161 @@
+<div class="container">
+    <!-- <p class="text-primary">You are using <%= theme %> theme</p> -->
+    <h4>ແບບຟອມສຳລັບການຂໍເລກປະຈຳຕົວຜູ້ເສຍອາກອນ ສຳລັບບຸກຄົນ</h4>
+    <form action="/pdf-maker" class="form" method="POST">
+        <p>I. ຂໍ້ມູນຜູ້ເສຍສ່ວຍສາອາກອນ</p>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="">ຊື່ ແລະ ນາມສະກູນ</label>
+                <input type="text" name="name" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">ວັນເດືອນປີເກີດ.</label>
+                <input type="date" name="birth" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">ເພດ:</label>
+                <p><input type="checkbox" name="male"> ຍິງ</p>
+                <p><input type="checkbox" name="male"> ຊາຍ</p>
+            </div>
+
+        </div>
+        <p> 2. ປະເພດເອກະສານຢັ້ງຢືນ</p>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="">ບັດປະຈຳຕົວ: ເລກທີ</label>
+                <input type="text" name="idcard" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">ໜັງສືຜ່ານແດນ: ເລກທີ</label>
+                <input type="text" name="idpassport" class="form-control">
+            </div>
+            <div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="">ສຳມະໂນຄົວ: ເລກທີ</label>
+                        <input type="text" name="idCensus" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ສະຖານທີອອກສຳມະໂນຄົວ</label>
+                        <input type="text" name="placeCensus" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ເລກບັນຊີ</label>
+                        <input type="text" name="account" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ທະນາຄານ</label>
+                        <input type="text" name="bank" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ເລກບັດປະກັນສັງຄົມ</label>
+                        <input type="text" name="idEnsurance" class="form-control">
+                    </div>
+                </div>
+                <p>II. ຂໍ້ມູນຕິດຕໍ່ :</p>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="">1. ທີຢູ່ຕາມເອກະສານຢັ້ງຢືນ: ບ້ານ.</label>
+                        <input type="text" name="village" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ເຮືອນເລກທີ.</label>
+                        <input type="text" name="idhome" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ໜ່ວຍ</label>
+                        <input type="text" name="idGroup" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ຖະໜົນ</label>
+                        <input type="text" name="idstreet" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="">2. ທີຢູ່ບ່ອນເຮັດວຽກ: ບ້ານ</label>
+                        <input type="text" name="villageOffice" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ເຮືອນເລກທີ</label>
+                        <input type="text" name="idOffice" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ໜ່ວຍ</label>
+                        <input type="text" name="idGroupOffice" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ຖະໜົນ</label>
+                        <input type="text" name="idStreetOffice" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="">3. ຕູ້ປນ:</label>
+                        <input type="text" name="idPostal" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ໂທລະສັບ:</label>
+                        <input type="text" name="phone" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ແພັກ</label>
+                        <input type="text" name="idFax" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ຖະໜົນ</label>
+                        <input type="text" name="postalStreet" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ເມວ:</label>
+                        <input type="text" name="email" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ໂທລະສັບມືຖື:</label>
+                        <input type="text" name="phoneNumber" class="form-control">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="">ຖະໜົນ</label>
+                        <input type="text" name="street" class="form-control">
+                    </div>
+                </div>
+
+                <p>III. ການເຄຶ່ອນໄຫວກິດຈະການຂອງຜູ້ສ່ວຍສາອາກອນ :</p>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <p><input type="checkbox" name="name1"> ລັດຖະກອນ</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <p><input type="checkbox" name="name2"> ຜູ້ເຮັດວຽກອິດສະຫຼະ</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <p><input type="checkbox" name="name3"> ພະນັກງານເອກະຊົນ</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <p><input type="checkbox" name="name4"> ອາກອນປັນຜົນ, ລິຂະສິດ</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <p><input type="checkbox" name="name5"> ລາຍໄດ້ຈາກຄ່າເຊົ່າ</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <p><input type="checkbox" name="name6"> ອາຊີບອື່ນໆ <input type="text" class="form-control"></p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <p><input type="checkbox" name="name7"> ລາຍໄດ້ອຶ່ນໆ <input type="text" class="form-control"></p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">TIN:</label>
+                    <input type="text" placeholder="TIN NUMBER" name="tinCode" class="form-control">
+                </div>
+
+                <button class="btn btn-primary" type="submit">Export to PDF</button>
+                
+    </form>
+    <br>
+    <br>
+    <br>
+</div>
